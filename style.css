@@ -1,0 +1,70 @@
+:root {
+    --bg: #ffff34;
+    --bg-of-cities: #20fff4;
+    --shadow-of-city: 5px 5px 5px rgb(81, 124, 90);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form {
+    padding: 4rem 0;
+    height: 100vh;
+    box-sizing: border-box;
+    width: 60%;
+}
+.input-for-city {
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5rem 0.3rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.2rem;
+    font-size: 30px;
+    font-weight: normal;
+    color: #232323;
+    margin-bottom: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.filtered-list-of-cities {
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #3f3f3f;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.city {
+    background: var(--bg-of-cities);
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: var(--shadow-of-city);
+}
+.city > *:first-child {
+    display: block;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+.city > *:last-child {
+    font-size: 0.9rem;
+}
+.highlighting {
+    background: var(--bg);
+}
